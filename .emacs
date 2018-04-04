@@ -32,6 +32,7 @@
 ;;turn off menu and tool bar
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+(scroll-bar-mode -1)
 ;;evil mode - install in path first
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
