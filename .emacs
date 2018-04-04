@@ -63,3 +63,5 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'zenburn t)
 (setq explicit-shell-file-name "C:/Program Files/Git/bin/bash")
+;;less info in dired
+(defun my-dired-mode-setup () "show less information in dired buffers" (dired-hide-details-mode 1)) (add-hook 'dired-mode-hook 'my-dired-mode-setup)
