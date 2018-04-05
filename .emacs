@@ -69,3 +69,11 @@
 ;;allows you to open 2 dired windows, when you press C to copy a file in one dired the directory in the
 ;;next dired will be the default destination
 (setq dired-dwim-target t)
+;;prevents dired from opening a new buffer for each directory visited
+(put 'dired-find-alternate-file 'disabled nil)
+(add-hook 'dired-mode-hook
+ (lambda ()
+  (define-key dired-mode-map (kbd "^")
+    (lambda () (interactive) (find-alternate-file "..")))
+  ; was dired-up-directory
+ ))
