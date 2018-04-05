@@ -66,3 +66,6 @@
 (setq explicit-shell-file-name "C:/Program Files/Git/bin/bash")
 ;;less info in dired
 (defun my-dired-mode-setup () "show less information in dired buffers" (dired-hide-details-mode 1)) (add-hook 'dired-mode-hook 'my-dired-mode-setup)
+;;allows you to open 2 dired windows, when you press C to copy a file in one dired the directory in the
+;;next dired will be the default destination
+(setq dired-dwim-target t)
