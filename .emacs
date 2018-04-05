@@ -17,6 +17,8 @@
    (quote
     ("a1e99cb36d6235abbe426a0a96fc26c006306f6b9d2a64c2435363350a987b4c" default)))
  '(org-agenda-files nil)
+ '(inhibit-startup-screen t)
+ '(initial-buffer-choice "C:/Users/epk935/Desktop/Todo.org")
  '(package-selected-packages (quote (avy ranger magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
